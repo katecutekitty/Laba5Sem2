@@ -42,8 +42,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Logic.cs" />
-    <Compile Include="StudentPresenter.cs" />
+    <Compile Include="RelayCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{8ce52756-d4e9-42fa-a457-f3ac4945c3ad}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

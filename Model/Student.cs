@@ -14,6 +14,7 @@ namespace Model
 
 
         public string Name { get; set; }
+        public string _name;
         
         public string Group { get; set; }
         

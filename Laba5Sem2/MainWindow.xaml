@@ -7,6 +7,21 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <ListView ItemsSource="{Binding Students}" SelectedItem="{Binding CurrentStudent}" Margin="304,31,35,185">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Name}">Имя</GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Group}">Группа</GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Path=Speciality}">Специальность</GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Добавить" Command="{Binding Path=AddStudentCommand}" HorizontalAlignment="Left" Height="57" Margin="61,160,0,0" VerticalAlignment="Top" Width="136"/>
+        <Button Content="Удалить" Command="{Binding Path=RemoveStudentCommand}" HorizontalAlignment="Left" Height="61" Margin="65,245,0,0" VerticalAlignment="Top" Width="128"/>
+        <TextBox HorizontalAlignment="Left" Height="17" Margin="18,52,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="136"/>
+        <TextBox HorizontalAlignment="Left" Height="19" Margin="18,21,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="136"/>
+        <TextBox HorizontalAlignment="Left" Height="21" Margin="18,80,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="136"/>
+
+
     </Grid>
 </Window>

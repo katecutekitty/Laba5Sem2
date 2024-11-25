@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using ViewModel;
 
 namespace Laba5Sem2
 {
@@ -23,6 +24,8 @@ namespace Laba5Sem2
         public MainWindow()
         {
             InitializeComponent();
+            StudentViewModel SVM = new StudentViewModel();
+            this.DataContext = SVM;
         }
     }
 }
