@@ -21,10 +21,11 @@ namespace Laba5Sem2
     /// </summary>
     public partial class MainWindow : Window
     {
+        StudentViewModel SVM;
         public MainWindow()
         {
             InitializeComponent();
-            StudentViewModel SVM = new StudentViewModel();
+            SVM = new StudentViewModel();
             this.DataContext = SVM;
         }
     }
